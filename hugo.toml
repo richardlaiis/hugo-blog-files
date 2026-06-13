@@ -1,0 +1,31 @@
+theme = 'hugo-theme-stack'
+baseURL = 'https://github.com/richardlaiis'
+locale = 'en-us'
+title = 'richardlaiis what'
+
+[params.sidebar]
+    subtitle = "If you lock in you can do anything."
+    avatar = "/teto1.png"
+
+[[menu.main]]
+    identifier = "home"
+    name       = "Home"
+    url        = "/"
+    weight     = -100
+    [menu.main.params]
+        icon = "home"
+
+[[menu.social]]
+    identifier = "github"
+    name       = "GitHub"
+    url        = "https://github.com/richardlaiis"
+    [menu.social.params]
+        icon = "brand-github"
+
+[params.widgets]
+    homepage = [
+        { type = "search" },
+        { type = "archives", params = { limit = 10 } },
+        { type = "categories", params = { limit = 10 } }
+    ]
+    page     = [{ type = "toc" }]
